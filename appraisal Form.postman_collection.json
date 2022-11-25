@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "ac3cc14e-769a-4e9d-ae5c-8686b1db6e74",
+		"name": "appraisal Form",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "findOne",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "image",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginUsername\":\"bala\",\r\n    \"loginPassword\":\"123456789\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/user-login-details/loginUser"
+			},
+			"response": []
+		},
+		{
+			"name": "fact_genderal_attributes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n     \"userId\": 1,\r\n     \"generalAttributeType\":10,\r\n    \"jobDomainknowledgeRating\": \"2\",\r\n    \"jobDomainKnowledgeComments\": \"good\",\r\n    \"communicationRating\": \"5\",\r\n    \"communicationComments\": \"very good\",\r\n    \"effectivenessRating\": \"1\",\r\n    \"effectivenessComments\": \"good\",\r\n    \"initiativeRating\": \"2\",\r\n    \"initiativeComments\": \"dfdfs\",\r\n    \"achievementOrientationRating\": \"3\",\r\n    \"achievementOrientationComments\": \"5\",\r\n    \"disciplineRating\": \"2\",\r\n    \"disciplineComments\": \"faewrt\",\r\n    \"timeManagementRating\": \"1\",\r\n    \"timeManagementComments\": \"dsdsa\",\r\n    \"teamWorkRating\": \"2\",\r\n    \"teamWorkComments\": \"wawde\",\r\n    \"adaptabilityRating\": \"3\",\r\n    \"adaptabilityComments\": \"aaszdf\",\r\n    \"customerOrientationRating\": \" 2\",\r\n    \"customerOrientationComments\": \"aeaf\",\r\n    \"enableStatus\": \"yes\",\r\n    \"deleteStatus\": \"no\",\r\n    \"createdBy\": \"bala\",\r\n    \"isActive\": \"boolean\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/fact_general_attributes_2/update"
+			},
+			"response": []
+		},
+		{
+			"name": "fact_key_result_area",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"userId\": \"01\",\r\n    \"scheduleSlippageRating\": \"1\",\r\n    \"scheduleSlippageComments\": \"very good\",\r\n    \"effortVarianceRating\": \"2\",\r\n    \"effortVarianceComments\": \"good\",\r\n    \"adherenceToSlasRating\": \"4\",\r\n    \"adherenceToSlasComments\": \"ok\",\r\n    \"postShipmentDefectManagementRating\": \"6\",\r\n    \"postShipmentDefectManagementComments\": \"very good\",\r\n    \"postDevelopmentQualityRating\": \"03\",\r\n    \"postDevelopmentQualityComments\": \"asdfdf\",\r\n    \"knowledgeEnhancementRating\": \"2\",\r\n    \"knowledgeEnhancementComments\": \"awefa\",\r\n    \"processComplianceRating\": \"7\",\r\n    \"processComplianceComments\": \"fedsds\",\r\n    \"createdBy\": \"barani\",\r\n    \"isActive\": \"\"\r\n   \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/fact_key_result_area/create"
+			},
+			"response": []
+		}
+	]
+}
